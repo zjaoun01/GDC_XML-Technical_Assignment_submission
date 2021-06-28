@@ -38,7 +38,7 @@
     <user>
         <firstName>Kyle</firstName>
         <lastName>Kibber</lastName>
-        <emailAddress>Kibber1990@dd22.edu</emailAddress>
+        <emailAddress>kibber1990@dd22.edu</emailAddress>
     </user>
     <user>
         <firstName>Axel</firstName>
@@ -48,11 +48,11 @@
     <user>
         <firstName>Joe</firstName>
         <lastName>Smith</lastName>
-        <emailAddress>jsmith@gmail </emailAddress>
+        <emailAddress>jsmith@gmail</emailAddress>
     </user>
     <user>
-        <firstName>kyle</firstName>
-        <lastName>Kim</lastName>
-        <emailAddress>kyleK@gmail.error </emailAddress>
+        <firstName>Sarah</firstName>
+        <lastName>Simon</lastName>
+        <emailAddress>ssimon@mail.uk</emailAddress>
     </user>
 </users>

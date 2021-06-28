@@ -95,13 +95,14 @@ namespace XML_Technical_Assignment
             return true;
         }
 
-        // Determines if an email address has the ends in any two or 3 letters.
+        // Determines if an email address has the ends in two or more consecutive letters after the dot
+        // Ex: .com, .org, .edu, .uk, etc.
         // The parameter email is the name of the email address to validate.
         public Boolean endOfEmailValidator(String email)
         {
             MailAddress address = new MailAddress(email);
-                Regex endDomain = new Regex(@"\.[a-zA-Z]{2,3}$"); // Pattern for ending in any two letters. 
-                if(endDomain.IsMatch(email)) //Check that the last two characters of an email address is two letters
+                Regex endDomain = new Regex(@"\.[a-zA-Z]{2,}$"); // Pattern for ending in any two or more letters after the dot
+                if(endDomain.IsMatch(email)) 
                 {
                     return true;
                 }
