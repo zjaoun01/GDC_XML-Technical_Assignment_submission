@@ -6,7 +6,7 @@ using System.Net.Mail;
 using System.Text.RegularExpressions;
 
 // Author: Zackery Jaouni
-// Last updated: 6/26/2021
+// Last updated: 6/28/2021
 // Description: Attempts to parse an XML file for email address and
 // seperates the valid and invalid email addresses into seperate lists
 namespace XML_Technical_Assignment
@@ -83,7 +83,7 @@ namespace XML_Technical_Assignment
             {
                 MailAddress address = new MailAddress(email);
                 Regex repeatedSpecial = new Regex(@"\.{2,}");  // Pattern for repeated dot . 
-                if(repeatedSpecial.IsMatch(email)) //Check for repeated dot . as it indicates invalid email address
+                if(repeatedSpecial.IsMatch(email) || !endOfEmailValidator(email))
                 {
                     return false;
                 }
@@ -95,11 +95,25 @@ namespace XML_Technical_Assignment
             return true;
         }
 
+        // Determines if an email address has the ends in any two or 3 letters.
+        // The parameter email is the name of the email address to validate.
+        public Boolean endOfEmailValidator(String email)
+        {
+            MailAddress address = new MailAddress(email);
+                Regex endDomain = new Regex(@"\.[a-zA-Z]{2,3}$"); // Pattern for ending in any two letters. 
+                if(endDomain.IsMatch(email)) //Check that the last two characters of an email address is two letters
+                {
+                    return true;
+                }
+
+            return false;
+        }
+
         // Outputs the list of valid Emails
         public void displayValidEmails()
         {
-            Console.WriteLine("There are "+ validEmails.Count + " valid emails");
-            Console.WriteLine("The list of valid emails:");
+            Console.WriteLine("There are "+ validEmails.Count + " valid email addresses");
+            Console.WriteLine("The list of valid email addresses:");
             foreach(String email in validEmails)
             {
                 Console.WriteLine(email);
@@ -109,8 +123,8 @@ namespace XML_Technical_Assignment
         // Outputs the list of invalid Emails
         public void displayInvalidEmails()
         {
-            Console.WriteLine("There are "+ invalidEmails.Count + " invalid emails");
-            Console.WriteLine("The list of invalid emails:");
+            Console.WriteLine("There are "+ invalidEmails.Count + " invalid email addresses");
+            Console.WriteLine("The list of invalid email addresses:");
             foreach(String email in invalidEmails)
             {
                 Console.WriteLine(email);

@@ -13,7 +13,7 @@
     <user>
         <firstName>Adam</firstName>
         <lastName>Atlas</lastName>
-        <emailAddress>AdamAtlas...!com</emailAddress>
+        <emailAddress>AdamAtlas.com</emailAddress>
     </user>
     <user>
         <firstName>Ashley</firstName>
@@ -36,11 +36,6 @@
         <emailAddress>Dot@domain..com</emailAddress>
     </user>
     <user>
-        <firstName>Carol</firstName>
-        <lastName>Cartmen</lastName>
-        <emailAddress>CarolCart@domain</emailAddress>
-    </user>
-    <user>
         <firstName>Kyle</firstName>
         <lastName>Kibber</lastName>
         <emailAddress>Kibber1990@dd22.edu</emailAddress>
@@ -53,6 +48,11 @@
     <user>
         <firstName>Joe</firstName>
         <lastName>Smith</lastName>
-        <emailAddress>jsmith@Smitherson.com (Joe Smith) </emailAddress>
+        <emailAddress>jsmith@gmail </emailAddress>
+    </user>
+    <user>
+        <firstName>kyle</firstName>
+        <lastName>Kim</lastName>
+        <emailAddress>kyleK@gmail.error </emailAddress>
     </user>
 </users>
