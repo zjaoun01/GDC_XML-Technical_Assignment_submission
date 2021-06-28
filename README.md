@@ -1,2 +1,2 @@
-# Test
-Test of uploading Virtual Studio Code 
+# Submission to the GDC for the XML-Technical Assignment
+

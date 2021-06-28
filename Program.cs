@@ -83,9 +83,7 @@ namespace XML_Technical_Assignment
             {
                 MailAddress address = new MailAddress(email);
                 Regex repeatedSpecial = new Regex(@"\.{2,}");  // Pattern for repeated dot . 
-                //Regex repeatedSpecial = new Regex(@"\W{2,}"); 
                 if(repeatedSpecial.IsMatch(email)) //Check for repeated dot . as it indicates invalid email address
-                //if(repeatedSpecial.IsMatch(email) || !endOfEmailValidator(email))
                 {
                     return false;
                 }
@@ -95,20 +93,6 @@ namespace XML_Technical_Assignment
                 return false;
             }
             return true;
-        }
-
-        // Determines if an email address has the ends in any two letters.
-        // The parameter email is the name of the email address to validate.
-        public Boolean endOfEmailValidator(String email)
-        {
-            MailAddress address = new MailAddress(email);
-                Regex endDomain = new Regex(@"[a-zA-Z]{2}$"); // Pattern for ending in any two letters. 
-                if(endDomain.IsMatch(email)) //Check that the last two characters of an email address is two letters
-                {
-                    return true;
-                }
-
-            return false;
         }
 
         // Outputs the list of valid Emails
