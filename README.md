@@ -18,7 +18,7 @@ The purpose of this program is to be able to take a file name from a user and de
     6. The program outputs the total number of valid email addresses followed by a list of the valid email addresses.<br>
     7. The program outputs the total number of invalid email addresses followed by a list of the invalid email addresses.<br> <br>
 
-## Other files:
-**Practice_Record.xml** is a test file for the XML_Email_Validator.cs and contains 3 valid email addresses and 8 invalid email addresses <br>
+## XML files:
+**Practice_Record.xml** is a test file for the XML_Email_Validator.cs and contains 3 valid email addresses and 8 invalid email addresses.<br>
 
 **Empty.xml** file can be used to test the results of an XML file that contains no email addresses.  In this case the file can be parsed so no error messages are displayed and both the valid and invalid lists of email addresses are empty.
