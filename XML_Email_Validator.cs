@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 // seperates the valid and invalid email addresses into seperate lists
 namespace XML_Technical_Assignment
 {
-    public class EmailValidator
+    public class XMLEmailValidator
     {
         private XmlDocument recordsDoc = new XmlDocument(); // Represents a XML file to parse for email adresses
         private ArrayList validEmails = new ArrayList(); // Array list of valid emails in a XML file
@@ -23,7 +23,7 @@ namespace XML_Technical_Assignment
         // called to create a lists of valid and invalid emails.
         // If the file cannot be found or could not be parsed an error 
         // message is displayed.
-        public EmailValidator(String fileName)
+        public XMLEmailValidator(String fileName)
         {
             if(isFileInDirectory(fileName))
             {
@@ -126,7 +126,7 @@ namespace XML_Technical_Assignment
         {
             Console.WriteLine("Enter the name of an XML file to read:");
             String fileName = Console.ReadLine();           
-            EmailValidator eV = new EmailValidator(fileName);
+            XMLEmailValidator eV = new XMLEmailValidator(fileName);
             Console.WriteLine();
             eV.displayValidEmails();
             Console.WriteLine();
