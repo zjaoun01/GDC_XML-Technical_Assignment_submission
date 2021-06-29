@@ -6,13 +6,13 @@ The purpose of this program is to be able to take a file name from a user and de
 **When running the main method of the program:**<br>
     1. It prompts the user for a file name.<br>
     2. Searches directory for a file with the indicated name.<br>
-        - If the file cannot be found an error message will be displayed.<br>
+        > - If the file cannot be found an error message will be displayed.<br>
     3. If the file exits the program will attempt to parse the file as an XML Document.<br>
-         - If the file cannot be parsed and error message is displayed. This can occur from the desired file having permissions set to prevent access, if the file contains errors, the file type not being an XML, etc.<br>
+        > - If the file cannot be parsed and error message is displayed. This can occur from the desired file having permissions set to prevent access, if the file contains errors, the file type not being an XML, etc.<br>
     4. For each email address in the XML file the program will validate for valid syntax.<br>
-        - Email addresses should be contained in elements named **emailAddress**.  If the element name is not **emailAddress** it will not be used.<br>
-        - The C# library **using System.Net.Mail** and a regular expression for repeating dots **.** is used to verify if the email addresses have valid syntax.<br>
-        - The email address should end with a top-level domanin such as .com, .edu, .uk, .org, etc. If the email address does not have the appropriate ending it will be marked invalid.<br> 
+        > - Email addresses should be contained in elements named **emailAddress**.  If the element name is not **emailAddress** it will not be used.<br>
+        > - The C# library **using System.Net.Mail** and a regular expression for repeating dots **.** is used to verify if the email addresses have valid syntax.<br>
+        > - The email address should end with a top-level domanin such as .com, .edu, .uk, .org, etc. If the email address does not have the appropriate ending it will be marked invalid.<br> 
         **Important note:** If any number of spaces are included after an email address it will be marked invalid!<br>
     5. The email addresses are seperated into a list of valid email addresses and invalid email addresses.<br>
     6. The program outputs the total number of valid email addresses followed by a list of the valid email addresses.<br>
