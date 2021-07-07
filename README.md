@@ -18,6 +18,11 @@ The purpose of this program is to be able to take a file name from a user and de
     6. The program outputs the total number of valid email addresses followed by a list of the valid email addresses.<br>
     7. The program outputs the total number of invalid email addresses followed by a list of the invalid email addresses.<br> <br>
 
+## Main program: XML_Email_Validator_V2.cs<br> 
+**Updated:**<br>
+    Now checks each record of an XML document for first name, last name, and email address.<br>
+    **N/a** is used for a missing or blank first name, last name, or email address. <br>
+    
 ## XML files:
 **Practice_Record.xml** is a test file for the XML_Email_Validator.cs and contains 3 valid email addresses and 8 invalid email addresses.<br>
 

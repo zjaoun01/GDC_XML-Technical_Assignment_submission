@@ -55,4 +55,18 @@
         <lastName>Simon</lastName>
         <emailAddress>ssimon@mail.uk</emailAddress>
     </user>
+    <user>
+        <firstName>Billy</firstName>
+        <lastName>Blank</lastName>
+        <emailAddress></emailAddress>
+    </user>
+    <user>
+        <firstName>Milly</firstName>
+        <lastName>Missing</lastName>
+    </user>
+    <user>
+        <firstName>Willy</firstName>
+        <lastName>Whitespace</lastName>
+        <emailAddress>                        </emailAddress>
+    </user>
 </users>
